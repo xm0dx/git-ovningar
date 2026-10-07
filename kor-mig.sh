@@ -28,8 +28,9 @@ gh pr merge --merge --delete-branch
 git checkout -q main && git pull -q
 
 echo "== 4. Ärende: öppna och stäng direkt =="
-gh issue create --title "Övning: öppna och stäng ett ärende" --body "Testar hur man skapar och stänger ett ärende på GitHub."
-gh issue close 1 --comment "Övningen är klar."
+url=$(gh issue create --title "Övning: öppna och stäng ett ärende" --body "Testar hur man skapar och stänger ett ärende på GitHub.")
+echo "$url"
+gh issue close "${url##*/}" --comment "Övningen är klar."
 
 echo "== 5. Lägg till skriptet i repot =="
 git add kor-mig.sh
