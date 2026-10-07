@@ -1,0 +1,3 @@
+# void
+
+Metoden returnerar ingenting.
