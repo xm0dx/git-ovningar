@@ -7,3 +7,5 @@ Här övar jag på arbetsflödet i Git och GitHub:
 - skapa och stänga ett ärende (issue)
 
 Kommandona jag använder finns i KOMMANDON.md.
+
+Korta anteckningar om varje kommando ligger i mappen anteckningar. Frågor och svar finns under Discussions.
